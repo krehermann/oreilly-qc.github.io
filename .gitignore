@@ -4,3 +4,4 @@ venv/
 tags
 *.swp
 notes/
+*.vscode*

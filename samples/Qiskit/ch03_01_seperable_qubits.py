@@ -6,6 +6,7 @@
 
 from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, execute, Aer, IBMQ, BasicAer
 import math
+import matplotlib.pyplot as plt
 ## Uncomment the next line to see diagrams when running in a notebook
 #%matplotlib inline
 
@@ -25,4 +26,5 @@ result = job.result()
 
 outputstate = result.get_statevector(qc, decimals=3)
 print(outputstate)
-qc.draw()        # draw the circuit
+qc.draw(output='mpl')        # draw the circuit
+plt.show()
